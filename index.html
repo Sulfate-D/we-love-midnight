@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We love you midnight ❤️</title>
+    <title>Floating Rectangle</title>
     <style>
-        
+        /* General reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        
+        /* Full-page container */
         body {
             height: 100vh;
             display: flex;
@@ -23,7 +23,7 @@
             font-family: Arial, sans-serif;
         }
 
-        
+        /* Floating rectangle */
         .rectangle {
             width: 300px;
             height: 150px;
@@ -35,14 +35,12 @@
             color: #333;
             font-size: 20px;
             font-weight: bold;
-            transform: scale(0.8);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease;
         }
 
-        
+        /* Optional hover effect for focus */
         .rectangle:hover {
-            transform: scale(1);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
         }
     </style>
