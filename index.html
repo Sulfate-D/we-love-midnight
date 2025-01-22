@@ -1,1 +1,65 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Rectangle</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full-page container */
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(128, 128, 128, 0.7);
+            backdrop-filter: blur(10px);
+            font-family: Arial, sans-serif;
+        }
+
+        /* Floating rectangle */
+        .rectangle {
+            position: relative;
+            width: 300px;
+            height: 150px;
+            background: white;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Hover effect on the rectangle */
+        .rectangle:hover {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Rectangle wrapper to control visibility */
+        .rectangle-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="rectangle-wrapper">
+        <div class="rectangle">We love Midnight Devs ❤️</div>
+    </div>
+</body>
+</html>
